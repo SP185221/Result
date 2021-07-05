@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>My Result Portal - Testing website to display the student Examination Results</title>
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="refresh">
+    <meta http-equiv="expires" content="-1">
+    <meta name="description" content="data1">
+    <meta name="keywords" content="data2">
+
+    <script language="javascript">
+        function newwin() {
+
+            var URL, referrer, URLM;
+            URL = '127.0.0.1:8000';
+            
+
+            referer = document.referrer;
+            //document.writeln (referer.search(URL));
+
+            //if  (InStr(referer,URL )<>0)
+            if (referer.search(URL) == -1) {
+                if (referer.search(URLM) == -1) {
+
+                    document.write("<center>" + 'Thanks for visiting from ' + document.referrer);
+                    document.write("<br /> <b> <u>" + "Please visit on 127.0.0.1:8000");
+                }
+            }
+            if (self != top)
+                top.location.href = "HighGetRoll.htm";
+        }
+ </script>
+ <script language="JavaScript">
+
+     function FrontPage_Form1_Validator(theForm) {
+
+        if (theForm.regno.value == "") {
+            alert("Please Enter your Roll No.");
+            theForm.regno.focus();
+            return (false);
+        }
+
+        if (theForm.regno.value.length < 7) {
+            alert("Invalid Roll No.");
+            theForm.regno.focus();
+            return (false);
+        }
+
+        // var checkOK = "0123456789-";
+        var checkOK = "0123456789";
+        var checkStr = theForm.regno.value;
+        var allValid = true;
+        var decPoints = 0;
+        var allNum = "";
+        for (i = 0; i < checkStr.length; i++) {
+            ch = checkStr.charAt(i);
+            for (j = 0; j < checkOK.length; j++)
+                if (ch == checkOK.charAt(j))
+                    break;
+            if (j == checkOK.length) {
+                allValid = false;
+                break;
+            }
+            allNum += ch;
+        }
+        if (!allValid) {
+            // alert("Please enter only digit characters for Roll No.");
+            alert("Please enter only digit characters");
+            theForm.regno.focus();
+            return (false);
+        }
+
+        return (true);
+      }
+    </script>
+
+ </head>
+
+   <body onload="newwin()" vlink="#000080" topmargin="10" marginwidth="0" marginheight="0" link="#000080" leftmargin="0" alink="#000080">
+
+        <div align="center">
+           
+            <center>
+
+            
+              <table width="97%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                      <tr>
+                          <td width="16%">
+                              <p align="center">
+                                <img src="static/upmsplogo.jpeg" width="80" height="74" border="0">
+                              </p>
+                          </td>
+                           <td width="69%">
+                                <p align="center" style="font-size:30px;font-weight:bold;color:#800000">
+                                    Global Microtel Test Exam Result &nbsp;<br>
+                                    &nbsp;
+                                </p>
+                          </td>
+                           <td width="15%">
+                                <img src="static/glogo.jpg" width="136" height="53" border="0" align="right">
+                           </td>
+                      </tr>
+
+                       <tr>
+                            <td colspan="3" width="100%">
+                                <hr width="90%" size="1" color="#FF0000">
+                            </td>
+                       </tr>
+                       <tr>
+                           <td colspan="3" width="100%">
+                                <p align="center">
+                                    <strong><font size="2" face="Verdana"><font color="#000000">Brought to you by --</font> <font color="#000080">Global Microtel
+                                    </font></a></font></strong>
+                                </p>
+                           </td>
+                       </tr>
+
+
+                       <tr>
+                            <td colspan="3" width="100%">
+                              <hr width="90%" size="1" color="#FF0000">
+                            </td>
+                       </tr>
+
+
+                       <tr>
+                        <td colspan="3" width="100%">
+                            <p align="right"><font size="2" face="Verdana"></a></font></p>
+                        </td>
+                       </tr>
+                   </tbody>
+
+
+                </table>
+           </center>
+       </div>
+
+
+        <center>
+
+            <table width="85%" height="40%">
+
+               <tbody>
+
+                    <tr>
+                        <td width="100%" bgcolor="#E8E8FF">
+                            <form name="form1" method="post" action= "show" id="form1">                          
+                              
+
+                                   <div>
+	                                   <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E20C2650">
+	                                   <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	                                   <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="d5kydZ7r6dU3fbu9F1o7LPi4EZn4JNcgh+n23aqr0GHSIHw126P7ERdqjgQSxc9YdyGJIqGS5r7OqU81xC6UdnvTUxVljn/8YtFkRzDXrqPjp1vj9D7jqg/DUvVsiJ7NcqA4T5HsUiErEpnlvcw1sPbcrLRXIr4UGoV+cBROi432Oi4BRB7fG+LeCpRvMHAB1IL7IUvxPGhsaVKhRBxE8ikUmJSsiVV3VDTkfQG+Tx4=">
+                                   </div>
+                      
+
+                                    <table width="100%" height="40%">
+                                        <tbody>
+                                            <tr>
+                                                <td width="100%" bgcolor="#000080">
+                                                    <p align="center">
+                                                        <b><font size="2" face="Verdana" color="#FFFFFF">TEST RESULT - &nbsp;EXAMINATION RESULT - YEAR 2020</font></b>
+                                                    </p>
+                                                </td>
+                                            </tr>
+               
+                                            <tr>
+                                                <td width="100%">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+                                            <p align="center">      
+                                               <font size="2" face="Verdana"><b>Please enter your Roll Number</b>&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                                               <input name="RollNo" placeholder = "Eg. 12345678" type="text" maxlength="8" id="txtRollNo" tabindex="1" autocomplete="off" onkeypress="return isNumber(event)" style="height:25px;width:147px;"><br>
+                                               <font size="2" face="Verdana"><b>Enter Your School code (As given in Admit Card)</b></font>
+                                               <input name="SchoolCode"  placeholder = "Optional" type="text" maxlength="5" id="txtSchoolCode" tabindex="2" autocomplete="off" onkeypress="return isNumber(event)" style="height:25px;width:147px;"><br>    
+                                           </p>
+
+                                           <p align="center">
+       
+                                               <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="SUBMIT" id="btnSubmit" tabindex="4" style="margin-left: 27.5%;">&nbsp;&nbsp;
+                                               <input type="submit" name="ctl00$ContentPlaceHolder1$btnReset" value="RESET" id="btnReset">
+                                                          <br>
+        
+                                               <font size="2" face="Verdana" color="#000080">(Please Enter all the </font>
+                                               <font size="2" face="Verdana" color="#FF0000">SEVEN </font>
+                                               <font size="2" face="Verdana" color="#000080">digits of your Roll No. </font>
+                                               <font size="2" face="Verdana" color="#FF0000">for example : 0000009 </font>
+                                               <font color="#000080">
+                                               <font size="2" face="Verdana" color="#000080">)</font>
+                                            </p>   
+
+                            </form>
+                        </td>
+                    </tr>
+                
+                </tbody>
+           </table>
+
+
+
+
+            <div align="center">
+                <center>
+                
+                    <table width="95%" cellspacing="0" cellpadding="0" border="0">
+                         <tbody>
+                                             <tr>
+                                                     <td width="100%">&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </td>
+                                             </tr>
+
+
+                             <tr>
+                                     <td width="100%">
+                                                 <p align="Justify">
+                                                        <b><font size="2" face="Verdana" color="#FF0000">Note</font></b><font size="2" face="Verdana" color="#FF0000">:</font><font color="#000000">
+                                                      </font><font size="2" face="Verdana"><font color="#000000">Neither
+                                                       </font><font color="#800000">Global Microtel</a>
+                                                             </font><font color="#000000">nor</font><font color="#800000"> </font>Anyone
+                                                                       is from this testing site </a><font color="#000000"> is
+                                                                        responsible for any inadvertent error that may
+                                                                         have crept in the results being published on NET.
+                                                                         The results published on this are for testing and learning
+                                                                            purpose only. </font><font color="#FF0000"><b>These cannot be
+                                                                                  treated as any other thing</b></font><font color="#000000">. Thanks for visiting the site, 
+                                                                                 Have a Great Day ahead.</font></font>
+                                                  </p>
+                                         </td>
+                              </tr>
+
+                               <tr>
+                                 <td width="100%">&nbsp;&nbsp;
+                                 </td>
+                               </tr>
+
+                            <tr>
+                                <td>
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p align="center">
+                                                        <img src="static/banner.jpg" width="128" hspace="0" height="34" border="0" align="left"><font size="2" face="Verdana">Website designed and developed by <b><font color="#000080">Global Microtel for Learning & Testing Purpose only</font></b><br>
+                                                        </font>
+                                                        <font size="2" face="Verdana">Data update a test Data only <b><font color="#000080"> </font></b>
+                                                        </font>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+                                          
+        </center>
+
+    </body>
+   
+</html>

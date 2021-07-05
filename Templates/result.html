@@ -1,0 +1,232 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title> High School Examination Result </title>
+</head>
+
+<body bgcolor="#E8E8FF" link="#804000" vlink="#804000" alink="#804000" topmargin="0" leftmargin="6" marginwidth="0" marginheight="0">
+
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="96%">
+    <tbody><tr>
+      <td width="20%" bgcolor="#FFFFFF"><img border="0" src="static/upmsplogo.jpeg" width="80" height="74"></td>
+      <td width="62%" bgcolor="#FFFFFF">
+        <p align="center"><font color="#800000" face="Arial" size="4">TEST EXAM - EXAMINATION RESULT 2020<br>
+        </font></p>
+      </td>
+      <td width="18%" bgcolor="#FFFFFF">
+        <img border="0" src="static/glogo.jpg" width="136" height="53" align="right"></td>
+    </tr>
+  
+
+    <tr>
+      <td width="100%" colspan="3">
+
+
+   <strong><font face="Arial">&nbsp;&nbsp;</font></strong>
+      </td>
+    </tr>
+
+
+    <tr>
+    <td width="100%" colspan="3" style="border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px" height="25" bordercolor="#FF0000">
+
+   <p align="center"><strong>
+<font face="Arial" color="#000080">TEST &nbsp; EXAMINATION RESULT - Year
+2020</font></strong></p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td width="100%" colspan="3" style="border-top-style: none; border-top-width: medium">
+        <p align="right"><strong><font face="MS Sans Serif" size="2">B<font color="#000000">rought
+              to you by</font> 
+		<font color="#000080">Global Microtel</font></a></font></strong>
+        </p>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+
+{% for std in stds %}
+ 
+&nbsp;<table width="96%" border="0" cellspacing="1">
+ <tbody><tr>
+   <td align="center" width="18%">
+    <p align="left"><font face="Verdana" size="2" color="#800000">Roll Number&nbsp;</font></p>
+   </td>
+   <td align="center" width="32%"><b><font face="Verdana" size="2">
+    </font></b><p align="left"><b><font face="Verdana" size="2">{{std.roll}}</font></b></p></td>
+   <td align="center" width="17%">
+	<p align="left"><font face="Verdana" size="2" color="#800000">Father Name</font></p></td>
+   <td align="center" width="33%"><b><font face="Verdana" size="2">
+   </font></b><p align="left"><b><font face="Verdana" size="2">{{std.fname}}</font></b></p></td>
+ </tr>
+ <tr>
+   <td align="center" width="18%">
+    <p align="left"><font face="Verdana" size="2" color="#800000">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+   </td>
+   <td align="center" width="32%"><b><font face="Verdana" size="2">
+    </font></b><p align="left"><b><font face="Verdana" size="2">{{std.name}}</font></b></p></td>
+   <td align="center" width="17%">
+	<p align="left"><font face="Verdana" size="2" color="#800000">Mother Name</font></p></td>
+   <td align="center" width="33%"><font face="Verdana" size="2"><b>
+   </b></font><b></b><p align="left"><b><font face="Verdana" size="2">{{std.mname}}</font></b></p></td>
+
+ </tr>
+  
+ </tbody></table>
+
+ <table width="96%" border="0" height="148" cellspacing="1">
+ <tbody><tr>
+   <td align="center" width="98%" height="18" bgcolor="#E8E8FF" colspan="6">&nbsp;</td>
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="18" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" color="#800000" size="2">Subject</font></td>
+   <td align="center" width="59%" height="18" bgcolor="#FFFFFF" colspan="4" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" color="#800000" size="2">
+	Marks / Grade Obtained</font></td>
+   <td align="center" width="18%" height="18" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<font face="Verdana" color="#800000" size="2">&nbsp;Result </font></td>
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="22" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">&nbsp;</td>
+   <td align="center" width="11%" height="22" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<font face="Verdana" size="2" color="#000080">Theory</font></td>
+   <td align="center" width="10%" height="22" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<font face="Verdana" size="2" color="#000080">Practical</font></td>
+   <td align="center" width="10%" height="22" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<font face="Verdana" size="2" color="#000080">Total </font></td>
+   <td align="center" width="11%" height="22" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<font face="Verdana" size="2" color="#000080">Grade</font></td>
+   <td align="center" width="18%" height="22" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	&nbsp;</td>
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">HINDI</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">047</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">050</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">{{std.hindi}}</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">B1</font></td>
+   <td align="center" width="18%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">&nbsp;</font></td>
+ 
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">ENGLISH</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">035</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">029</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">{{std.english}}</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">B2</font></td>
+   <td align="center" width="22%" height="18" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><b><font face="Verdana" size="2" color="#800000">PASSED</font></b></td>
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">HOME SCIENCE</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">056</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">030</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">{{std.homescience}}</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">A2</font></td>
+   <td align="center" width="18%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">&nbsp;</font></td>
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">SCIENCE</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">036</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">030</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">{{std.science}}</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">B2</font></td>
+   <td align="center" width="18%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">&nbsp;</font></td>
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">SOCIAL SCIENCE</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">038</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">030</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">{{std.socialscience}}</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">B2</font></td>
+ <td align="center" width="18%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">&nbsp;</font></td>
+ </tr>
+
+ <tr>
+   <td align="center" width="21%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">DRAWING</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">052</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">029</font></td>
+   <td align="center" width="10%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">{{std.drawing}}</font></td>
+   <td align="center" width="11%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">A2</font></td>
+  <td align="center" width="18%" height="19" bgcolor="#FFFFFF" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><font face="Verdana" size="1">&nbsp;</font></td>
+ </tr>
+ </tbody></table>
+{% endfor %}
+
+
+
+
+<p>
+</p><center>  
+<font face="Verdana" size="2" color="#000080"><b> <a href="/">BACK TO PREVIOUS PAGE </a>
+</a> </b></font></center><font face="Verdana" size="2" color="#000080"><b>
+	</b></font><br>
+ 
+ <div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="96%">
+    <tbody><tr>
+      <td width="98%">
+		<p align="justify"><font face="Verdana" size="2" color="#000080">Note: </font>
+		</p>
+		<p align="justify"><font face="Verdana" size="2" color="#000080">1.
+		</font><font face="Verdana" size="2"> Neither
+        </font> <font face="Verdana" size="2" color="#000080"> 
+        <font color="#000080">Global Microtel</font></a>&nbsp;</font><font face="Verdana" size="2">nor</font><font face="Verdana" size="2" color="#000080">  
+		<font face="Verdana" size="2" color="#000080">Anyone is from this testing site is responsible for any inadvertent error that may have crept in the results being published on NET. The results published on this are for testing and learning purpose only. These cannot be treated as any other thing. Thanks for visiting the site, Have a Great Day ahead.</font> </a></font> 
+		<font color="#000080" face="Verdana" size="2"><font face="Verdana" size="2"></font> </font></a>
+		<font face="Verdana" size="2">
+                </font><font face="Verdana" size="2" color="#000080"> </font><font face="Verdana" size="2" color="#FF0000"> <b>
+                </b></font><font face="Verdana" size="2" color="#000080"></font>
+		<font face="Verdana" size="2">
+	</font></p>
+		<p align="justify"><font face="Verdana" size="2"></font><font face="Verdana" size="2" color="#000080">&nbsp;</font></p>
+		<p align="justify">&nbsp;</p></td>
+    </tr>
+  </tbody></table>
+  </center>
+ </div>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="96%">
+    <tbody><tr>
+      <td>
+        <p align="center"><font face="Verdana" size="2">Website is designed by
+		<b><font color="#000080">
+		<font color="#000080"><span style="text-decoration: none">Global Microtel </span></font></a></font></b><br>
+        Data provided as Test data only. <b>    <font color="#000080"></font></b></font></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</center></body></html>
