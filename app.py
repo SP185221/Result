@@ -11,9 +11,12 @@ def home():
 
 @app.route("/show", methods=['GET', 'POST'] )
 def show():
-    roll = request.form['RollNo']
-    stds = Result.query.filter_by( roll = int(roll) )
-    return render_template("result.html", stds = stds)
+    if request.method=='POST':
+        roll = request.form['RollNo']
+        stds = Result.query.filter_by( roll = int(roll) )
+        return render_template("result.html", stds = stds)
+    else:
+        return render_template("login.html")
 
 
 @app.route("/add")
